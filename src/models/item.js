@@ -1,0 +1,63 @@
+const mongoose=require('mongoose')
+
+const itemSchema=new mongoose.Schema({
+    itemid:{
+        type:String,
+        required:true,
+        unique:true
+    },
+    itemInfo:{
+        title:{
+            type:String,
+            required:true,
+        },
+        descp:{
+            type:String,
+            required:true,
+        },
+        category:{
+            type:String,
+            required:true,
+        },
+        price:{
+            type:Number,
+            required:true,
+        },
+        delivery:{
+            location:{
+                type:String,
+                required:true,
+            },
+            time:{
+                type:String,
+                required:true,
+            },
+        }
+    },
+    compInfo:{
+        name:{
+            type:String,
+            required:true,
+        },
+        email:{
+            type:String,
+            required:true,
+        },
+        contact:{
+            type:Number,
+            required:true,
+        },
+        accAddrs:{
+            type:String,
+            required:true,
+        }
+    },  
+    postedBy:{
+        type:mongoose.SchemaTypes.ObjectId,
+        required:true,
+        ref:'seller'
+    }
+})
+
+const Items=mongoose.model('item',itemSchema)
+module.exports=Items
