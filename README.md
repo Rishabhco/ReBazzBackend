@@ -41,3 +41,6 @@ Deployment made on Heroku
 ## 🙋🏻‍♂️ Contributors
 * [Kaushal Agrawal](https://github.com/Kaushal-A)
 * [Rishabh Agarwal](https://github.com/Rishabhco)
+* [Bhavik Agrawal](https://github.com/Bhavik0902)
+* [Vineet Raj](https://github.com/vinmik)
+* [Vyom Gupta](https://github.com/vyomguptaa)
